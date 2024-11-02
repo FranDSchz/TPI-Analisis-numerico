@@ -14,23 +14,23 @@
 git clone https://github.com/samuop/Analisis_Numerico.git
 ```
 
-### 1.4 Abrir una nueva terminal desde la carpeta del proyecto en el vscode
+## 2 Abrir una nueva terminal desde la carpeta del proyecto en el vscode
 
 ![alt text](image-2.png)
 
-### 1.5 Crear el entorno virtual ingresando el siguiente comando en la terminal
+## 3 Crear el entorno virtual ingresando el siguiente comando en la terminal
 
 ```sh
 python -m venv env
 ```
 
-### 1.6 Activar el entorno virtual ingresando el siguiente comando
+### 3.1 Activar el entorno virtual ingresando el siguiente comando
 
 ```sh
 .\env\Scripts\activate
 ```
 
-### 1.7 instalar las dependencias con el siguiente comando
+### 3.2 instalar las dependencias con el siguiente comando
 
 ```sh
 pip install -r requirements.txt
@@ -39,12 +39,12 @@ pip install -r requirements.txt
 >[!NOTE]
 >Este paso puede tardar un poco, tener paciencia...
 
-### 1.8 Instalar las siguientes extensiones en vscode
+## 4 Instalar las siguientes extensiones en vscode
 
 * Jupyter
 * Python
 
-### Comando para desactivar el entorno virtual cuando termines de trabajar
+## Comando para desactivar el entorno virtual cuando termines de trabajar
 
 ```sh
 deactivate
@@ -52,4 +52,4 @@ deactivate
 
 > [!WARNING]  
 > No hacer push directamente sobre main si no podes pisar el trabajo de otro compañero.
-> Cada uno deberia crear una nueva rama para trabajar para posteriormente unificarlas
+> Cada uno deberia crear una nueva rama para trabajar y posteriormente unificarlas
