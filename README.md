@@ -1,55 +1,85 @@
-# Como preparar el entorno
+# Trabajos Prácticos de Análisis Numérico 🧠💻
 
-## 1. Clonar el repositorio
+Este repositorio contiene los Trabajos Prácticos Integradores (TPI) desarrollados para la materia **Análisis Numérico**  de la carrera de Ingeniería en Sistemas de Información (UTN-FRRe).
 
-### 1.1 Crear una carpeta donde quieras que se guarde el proyecto
+El objetivo de estos trabajos es aplicar los fundamentos del cálculo numérico y simbólico para resolver problemas matemáticos complejos, utilizando herramientas clave del ecosistema de Data Science en Python como Jupyter, NumPy, SciPy y Matplotlib.
 
-### 1.2 Dentro de la carpeta dar click derecho y abrir git bash aquí
+### Aporte Personal
 
-![alt text](image-1.png)
+Aunque este repositorio es un fork del trabajo grupal, mi contribución principal se centró en la **implementación de los algoritmos, el análisis de los resultados y la generación de las visualizaciones de datos** en los Jupyter Notebooks.
 
-### 1.3 Ingresar el siguiente comando en el git bash para clonar el repo
+---
 
-```sh
-git clone https://github.com/samuop/Analisis_Numerico.git
-```
+## 🔬 Tareas y Métodos Implementados
 
-## 2 Abrir una nueva terminal desde la carpeta del proyecto en el vscode
+El repositorio cubre dos grandes áreas de la materia, cada una con su propio notebook y objetivos, basados en las consignas oficiales.
 
-![alt text](image-2.png)
+### 1. Fundamentos de Métodos Numéricos
 
-## 3 Crear el entorno virtual ingresando el siguiente comando en la terminal
+* **Notebook:** [`Grupo14_TPMetodosNumericos.ipynb`](./notebooks/Grupo14_TPMetodosNumericos.ipynb)
 
-```sh
-python -m venv env
-```
+En este trabajo se programaron desde cero los algorittmos numéricos fundamentales para:
 
-### 3.1 Activar el entorno virtual ingresando el siguiente comando
+* **Derivación Numérica:**
+    * Implementación de diferencias finitas (hacia adelante, hacia atrás y centradas).
+    * Análisis del error relativo de cada método.
 
-```sh
-.\env\Scripts\activate
-```
+* **Integración Numérica:**
+    * Implementación de la **Regla del Trapecio** y las **Reglas de Simpson (1/3 y 3/8)**.
 
-### 3.2 instalar las dependencias con el siguiente comando
+* **Resolución de Ecuaciones Diferenciales Ordinarias (EDOs):**
+    * Implementación de los métodos de **Euler**, **Euler Mejorado** y **Runge-Kutta de 4º Orden (RK4)**.
 
-```sh
-pip install -r requirements.txt
-```
+### 2. Sistemas de Ecuaciones Diferenciales y Estabilidad
 
->[!NOTE]
->Este paso puede tardar un poco, tener paciencia...
+* **Notebooks:**
+    * Investigación: [`Grupo14_TPsistemasInvest.ipynb`](./notebooks/Grupo14_TPsistemasInvest.ipynb)
+    * Actividades: [`Grupo14_TPsistemasActividades.ipynb`](./notebooks/Grupo14_TPsistemasActividades.ipynb)
 
-## 4 Instalar las siguientes extensiones en vscode
+Este trabajo se enfocó en el análisis de sistemas de EDOs y la comparación entre herramientas simbólicas y numéricas:
 
-* Jupyter
-* Python
+* **Investigación de Librerías:**
+    * Análisis comparativo de `NumPy`, `SymPy` y `SciPy` para cálculo matricial, resolución de ecuaciones, y transformada de Laplace.
 
-## Comando para desactivar el entorno virtual cuando termines de trabajar
+* **Análisis de Sistemas y Estabilidad:**
+    * Resolución de sistemas de EDOs homogéneos y no homogéneos.
+    * Clasificación y análisis de la estabilidad de puntos de equilibrio.
+    * Graficación de campos vectoriales asociados a los sistemas.
 
-```sh
-deactivate
-```
+---
 
-> [!WARNING]  
-> No hacer push directamente sobre main si no podes pisar el trabajo de otro compañero.
-> Cada uno deberia crear una nueva rama para trabajar y posteriormente unificarlas
+## 🛠️ Stack Tecnológico
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
+![NumPy](https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-313131?style=for-the-badge&logo=matplotlib&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-80C942?style=for-the-badge&logo=scipy&logoColor=white)
+![SymPy](https://img.shields.io/badge/SymPy-3B5524?style=for-the-badge&logo=sympy&logoColor=white)
+
+---
+
+## ⚙️ Cómo Ejecutar los Notebooks
+
+Para explorar el análisis en tu máquina local:
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/FranDSchz/TPI-Analisis-numerico.git
+    cd TPI-Analisis-numerico
+    ```
+2.  **Crea y activa un entorno virtual:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # macOS/Linux
+    # venv\Scripts\activate    # Windows
+    ```
+3.  **Instala las dependencias:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Inicia Jupyter Notebook:**
+    ```bash
+    jupyter notebook
+    ```
+Esto abrirá tu navegador. Navega a la carpeta `notebooks/` y abre cualquiera de los archivos `.ipynb`.
